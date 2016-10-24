@@ -34,3 +34,12 @@ p {
 .nav li.a, li.b a:hover {
   background-color: #38CCA4;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card img {
+  width: 100%;
+}
+.container {
+  padding: 2px 16px;
+}
