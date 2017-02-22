@@ -1,45 +1,56 @@
 body {
-  background-color: dodgerblue;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: red;
-  text-align: center;
+    background-color: dodgerblue;
 }
 p {
-  color: red;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+a {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: none;
 }
 .nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #47FFCD;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 .nav li {
-  display: inline;
+    float: left;
 }
-.nav li.a {
-  float: right;
+.nav li a, .dropbtn {
+    display: inline-block;
+    padding: 14px 16px;
 }
-.nav li.b {
-  float: left;
+.nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
 }
-.nav li.a, li.b a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.nav li.dropdown {
+    display: inline-block;
 }
-.nav li.a, li.b a:hover {
-  background-color: #38CCA4;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
-.card img {
-  width: 100%;
-}
-.container {
-  padding: 2px 16px;
+.dropdown-content a:hover {background-color: #555}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
